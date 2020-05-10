@@ -14,7 +14,7 @@ body {font-family: Arial;}
 
 /* Style the buttons inside the tab */
 .tab button {
-  background-color: #ff4000;
+  background-color: #f20d0d;
   float: left;
   border: none;
   outline: none;
@@ -26,7 +26,7 @@ body {font-family: Arial;}
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-  background-color: #00ff00;
+  background-color: #00bfff;
 }
 
 /* Create an active/current tablink class */
@@ -45,20 +45,20 @@ body {font-family: Arial;}
 </head>
 <body>
 <div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'London')">London</button>
-  <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
-  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+  <button class="tablinks" onclick="openCity(event, 'Link1')">Active count</button>
+  <button class="tablinks" onclick="openCity(event, 'Link2')">Populations</button>
+  <button class="tablinks" onclick="openCity(event, 'Link3')">Percentages</button>
 </div>
 
-<div id="London" class="tabcontent">
+<div id="Link1" class="tabcontent">
 <iframe src="https://datawrapper.dwcdn.net/FY6JV/7/" style="position: absolute; height: 100%; width: 100%; border: none"></iframe>
 </div>
 
-<div id="Paris" class="tabcontent">
+<div id="Link2" class="tabcontent">
 <iframe src="https://datawrapper.dwcdn.net/2whaq/2/" style="position: absolute; height: 100%; width: 100%; border: none"></iframe>
 </div>
 
-<div id="Tokyo" class="tabcontent">
+<div id="Link3" class="tabcontent">
 <iframe src="https://datawrapper.dwcdn.net/2whaq/2/" style="position: absolute; height: 100%; width: 100%; border: none"></iframe>
 </div>
 
