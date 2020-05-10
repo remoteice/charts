@@ -44,8 +44,8 @@ body {font-family: Arial;background-color: #29293d;}
 </head>
 <body>
 <div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'Link1')">Active count</button>
-  <button class="tablinks" onclick="openCity(event, 'Link2')">Population</button>
+  <button class="tablinks" onclick="openLink(event, 'Link1')">Active count</button>
+  <button class="tablinks" onclick="openLink(event, 'Link2')">Population</button>
 </div>
 
 <div id="Link1" class="tabcontent">
@@ -57,7 +57,9 @@ body {font-family: Arial;background-color: #29293d;}
 </div>
 
 <script>
-function openCity(evt, cityName) {
+window.onload = openLink(null,"Link1")
+  
+function openLink(evt, cityName) {
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
   for (i = 0; i < tabcontent.length; i++) {
