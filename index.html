@@ -14,7 +14,7 @@ body {font-family: Arial;background-color: #29293d;}
 
 /* Style the buttons inside the tab */
 .tab button {
-  background-color: #f20d0d;
+  background-color: #ffcc99;
   float: left;
   border: none;
   outline: none;
@@ -46,6 +46,7 @@ body {font-family: Arial;background-color: #29293d;}
 <div class="tab">
   <button class="tablinks" onclick="openLink(event, 'Link1')">Active count</button>
   <button class="tablinks" onclick="openLink(event, 'Link2')">Population</button>
+  <button class="tablinks" onclick="openLink(event, 'Link3')">State counts</button>
 </div>
 
 <div id="Link1" class="tabcontent">
@@ -54,6 +55,10 @@ body {font-family: Arial;background-color: #29293d;}
 
 <div id="Link2" class="tabcontent">
 <iframe src="https://datawrapper.dwcdn.net/2whaq/3/" style="position: absolute; height: 100%; width: 100%; border: none"></iframe>
+</div>
+
+<div id="Link3" class="tabcontent">
+<iframe src="https://remoteice.github.io/charts/statecount" style="position: absolute; height: 100%; width: 100%; border: none"></iframe>
 </div>
 
 <script>
